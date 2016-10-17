@@ -14,16 +14,16 @@ ul {
 }
 
 [class|="socialicon"] {
-	display: block;
-	width: 32px;
-	height: 32px;
 	background: #e7e7e7;
 	background-size: contain;
 	border-radius: 50%;
+	display: block;
+	height: 32px;
+	width: 32px;
 }
 
 .social ul {
-	font-size: 0px;
+	font-size: 0;
 }
 
 .social li {
@@ -53,12 +53,50 @@ ul {
 }
 
 .meta-info {
-	color: #ccc;
-	font-size: 1.13em;
-	text-align: right;
+	color: #bbb;
+	font-size: 1em;
 	line-height: 40px;
+	text-align: right;
 }
 
 .meta-info > span {
 	margin-left: 30px;
+}
+
+#header-bottom {
+	background: #7D5330;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+	height: 60px;
+}
+
+header nav ul {
+	float: right;
+	font-size: 0;
+}
+
+header nav li {
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15.25px;
+	line-height: 60px;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+
+header nav li a,
+header nav li a:hover,
+header nav li a:focus,
+header nav li a:active,
+header nav li a:visited,
+header nav li a:link {
+	color: #f6efda;
+	text-decoration: none;
+}
+
+header nav li a {
+	transition: color .2s ease;
+}
+
+header nav li a:hover {
+	color: #b9a15b;
 }
