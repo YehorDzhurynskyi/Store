@@ -96,7 +96,7 @@ ul {
 	color: #fafafa;
 	text-decoration: none;
 }
-
+/*
 header nav ul {
 	float: right;
 	font-size: 0;
@@ -128,7 +128,7 @@ header nav li a {
 header nav li a:hover {
 	color: #f2cc5f;
 }
-
+*/
 /*====================SLIDER====================*/
 
 #sliderbar {
@@ -229,37 +229,86 @@ header nav li a:hover {
 
 /*====================MAIN====================*/
 
-#box-wrapper {
-	margin-top: 20px;
+#top-menu-wrapper {
+	float: right;
+	padding-right: 10px;
 }
 
-#box-wrapper [id|="box"] {
-	background: #eee;
-	padding-bottom: 5px;
-	margin-bottom: 20px;
-}
-
-#box-wrapper [id|="box"] h3 {
-	margin-left: 20px;
-	font-size: 20px;
-	display: inline-block;
-}
-
-#box-wrapper ul {
+#search {
+	float: left;
 	font-size: 0;
-	height: 260px;
 }
 
-#box-wrapper .offer {
-	background: #fff;
-	display: inline-block;
-	height: inherit;
-	margin-right: .333333%;
-	width: 16.333333%;
+#search input {
+	border: none;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	font-size: 14px;
+	height: 30px;
+	margin-top: 20px;
+	padding-left: 20px;
+	width: 200px;
 }
 
-#box-wrapper .offer:last-child {
+#search input:focus {
+	box-shadow: 0 0 3px #f6efda;
+}
+
+#search button {
+	border: none;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	font-size: 16px;
+	height: 30px;
+	width: 40px;
+}
+
+#top-menu-wrapper .icons {
+	float: left;
+}
+
+#top-menu-wrapper .icons a {
+	border-right: 1px dotted #888;
+	color: #eee;
+	display: block;
+	float: left;
+	font-size: 35px;
+	height: 50px;
+	margin-top: 10px;
+	margin-right: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align: center;
+	width: 50px;
+}
+
+#top-menu-wrapper .icons a:first-child {
+	margin-left: 15px;
+}
+
+#top-menu-wrapper .icons a:last-child {
+	border: none;
 	margin-right: 0;
-	width: 16.666666%;
+	padding-right: 0;
 }
 
+#top-menu-wrapper .icons a:hover {
+	color: #fff;
+}
+
+#top-menu-wrapper .icons a:after {
+	bottom: -8px;
+	font-size: 13px;
+	position: absolute;
+	text-transform: lowercase;
+}
+
+#cart:after {
+	content: 'cart';
+	left: 9px;
+}
+
+#cabinet:after {
+	content: 'cabinet';
+	left: 4px;
+}
