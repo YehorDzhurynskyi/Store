@@ -79,8 +79,8 @@ ul {
 }
 
 #logo h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2.3em;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 2.8em;
 	line-height: 70px;
 	margin: 0;
 	padding-left: 10px;
@@ -324,26 +324,33 @@ ul {
 /*====================MAIN====================*/
 
 #catalog {
+	align-content: flex-start;
 	background: #eae1c8;
+	background: -moz-radial-gradient(center, ellipse cover, #eae1c8 0%, #ded6c1 35%, #e0d5b8 59%, #eae1c8 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #eae1c8), color-stop(35%, #ded6c1), color-stop(59%, #e0d5b8), color-stop(100%, #eae1c8));
+	background: -webkit-radial-gradient(center, ellipse cover, #eae1c8 0%, #ded6c1 35%, #e0d5b8 59%, #eae1c8 100%);
+	background: -o-radial-gradient(center, ellipse cover, #eae1c8 0%, #ded6c1 35%, #e0d5b8 59%, #eae1c8 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #eae1c8 0%, #ded6c1 35%, #e0d5b8 59%, #eae1c8 100%);
+	background: radial-gradient(ellipse at center, #eae1c8 0%, #ded6c1 35%, #e0d5b8 59%, #eae1c8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae1c8', endColorstr='#eae1c8', GradientType=1 );
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: flex-start;
-	padding-bottom: 50px;
 	justify-content: space-around;
+	padding-bottom: 50px;
 }
 
 .catalog-item {
 	background: #fff;
 	border-radius: 5px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+	height: 300px;
 	margin-top: 50px;
 	margin-left: 5px;
 	margin-right: 5px;
 	padding: 5px;
-	height: 300px;
 	text-align: center;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
 }
 
 .catalog-item:hover {
@@ -362,12 +369,12 @@ ul {
 }
 
 .catalog-item .image {
-	width: 250px;
-	height: 250px;
-	margin-bottom: 5px;
-	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: contain;
+	height: 250px;
+	margin-bottom: 5px;
+	width: 250px;
 }
 
 .catalog-image-phones {
@@ -392,4 +399,126 @@ ul {
 
 .catalog-image-keyboards {
 	background: url(../img/catalog/keyboards.png), #fff;
+}
+
+.catalog-image-monitors {
+	background: url(../img/catalog/monitors.jpg), #fff;
+}
+
+#info {
+	border-top: 2px dashed #e0d5b8;
+	padding: 0 40px;
+	padding-top: 50px;
+	text-align: justify;
+	margin: 50px 0;
+	color: #808080;
+}
+
+/*====================FOOTER====================*/
+
+footer {
+	background: #574330;
+	background: -moz-linear-gradient(top, #574330 0%, #44301d 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #574330), color-stop(100%, #44301d));
+	background: -webkit-linear-gradient(top, #574330 0%, #44301d 100%);
+	background: -o-linear-gradient(top, #574330 0%, #44301d 100%);
+	background: -ms-linear-gradient(top, #574330 0%, #44301d 100%);
+	background: linear-gradient(to bottom, #574330 0%, #44301d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#574330', endColorstr='#44301d', GradientType=0 );
+	box-shadow: 0 -2px 2px rgba(0, 0, 0, .8);
+	color: #c5c5c5;
+	padding: 0 40px;
+}
+
+.footer-box {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.copy {
+	color: #eee;
+	margin-bottom: 10px;
+}
+
+.copy-remark {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.schedule {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.schedule li {
+	padding-left: 5px;
+}
+
+.schedule li:first-child {
+	padding-left: 0;
+	color: #eee;
+	font-size: 14px;
+}
+
+.sitemap ul {
+	float: left;
+	margin-right: 60px;
+}
+
+.sitemap a,
+.sitemap a:hover,
+.sitemap a:focus,
+.sitemap a:active,
+.sitemap a:visited,
+.sitemap a:link {
+	color: #aaa;
+}
+
+.payment > span {
+	color: #eee;
+}
+
+.payment > span + div{
+	margin-top: 5px;
+}
+
+[class|="payment-icon"] {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+	float: left;
+	height: 50px;
+	margin-right: 5px;
+	width: 80px;
+}
+
+[class|="payment-icon"]:first-child {
+	clear: left;
+}
+
+.payment-icon-visa {
+	background-image: url(../img/payment/visa.png);
+}
+
+.payment-icon-mastercard {
+	background-image: url(../img/payment/mastercard.png);
+}
+
+.payment-icon-paypal {
+	background-image: url(../img/payment/paypal.png);
+}
+
+.social-footer {
+	margin-bottom: 30px;
+}
+
+.social-footer [class|="socialicon"] {
+	height: 33px;
+	width: 33px;
+}
+
+.address {
+	color: #999;
 }
