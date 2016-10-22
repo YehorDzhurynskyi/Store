@@ -321,9 +321,8 @@ if (typeof jQuery === 'undefined') {
     this.interval    = null
     this.$active     = null
     this.$items      = null
-
+    this.timeout     = options.timeout
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
-
     this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
       .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
@@ -352,15 +351,17 @@ if (typeof jQuery === 'undefined') {
   }
 
   Carousel.prototype.cycle = function (e) {
-    e || (this.paused = false)
+    setTimeout(function(){
+      this.timeout = null
+      e || (this.paused = false)
+      this.interval && clearInterval(this.interval)
 
-    this.interval && clearInterval(this.interval)
+      this.options.interval
+        && !this.paused
+        && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
 
-    this.options.interval
-      && !this.paused
-      && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
-
-    return this
+      return this
+    }.bind(this), this.timeout !== null ? this.timeout : 0)
   }
 
   Carousel.prototype.getItemIndex = function (item) {
