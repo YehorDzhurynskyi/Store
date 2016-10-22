@@ -189,10 +189,30 @@ ul {
 	margin-top: 20px;
 }
 
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.jcarousel ul {
+	width: 20000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jcarousel li {
+	float: left;
+}
+
+.jcarousel img {
+	display: block;
+	max-width: 100%;
+}
+
 #sliderbar [id*="slider"] {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
+	background: #fff;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
 	height: inherit;
 	margin-right: .333333333333%;
@@ -204,19 +224,7 @@ ul {
 	margin-right: 0;
 	width: 33.333333333333%;
 }
-
-#phone-slider {
-	background: url(../img/phoneslider.jpg), #fff;
-}
-
-#tablet-slider {
-	background: url(../img/tabletslider.png), #fff;
-}
-
-#laptop-slider {
-	background: url(../img/laptopslider.jpg), #fff;
-}
-
+/*
 #sliderbar [id*="slider"]:before,
 #sliderbar [id*="slider"]:after {
 	content: '';
@@ -240,8 +248,8 @@ ul {
 	border-bottom: 2px solid #ddd;
 	bottom: 20px;
 }
-
-#sliderbar [class|="shadow"] {
+*/
+#sliderbar [class*="shadow"] {
 	cursor: pointer;
 	height: 15%;
 	left: 0;
