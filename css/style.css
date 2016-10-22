@@ -475,7 +475,10 @@ footer {
 	background: -ms-linear-gradient(top, #574330 0%, #44301d 100%);
 	background: linear-gradient(to bottom, #574330 0%, #44301d 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#574330', endColorstr='#44301d', GradientType=0 );
+<<<<<<< HEAD
 	box-shadow: 0 -2px 2px rgba(0, 0, 0, .8);
+=======
+>>>>>>> ad661acff6286150e496b461d25b7c7aaade5d15
 	color: #c5c5c5;
 	padding: 0 40px;
 }
