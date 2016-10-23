@@ -16,7 +16,7 @@
 		<![endif]-->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT Sans|Quicksand|Oxygen" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT Sans|Quicksand|Oxygen|Exo" rel="stylesheet"> 
 	</head>
 	<body>
 		<header>
@@ -54,16 +54,48 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-											<h4 class="modal-title" id="myModalLabel">Login</h4>
+											<button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
 										<div class="modal-body">
-										hi
+											<form class="form-horizontal">
+												<div class="form-input-box">
+													<div class="form-group">
+														<label for="inputEmail" class="col-sm-2 control-label">Email</label>
+														<div class="col-sm-10">
+															<input type="email" class="form-control custom-input" id="inputEmail" placeholder="Email">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+														<div class="col-sm-10">
+															<input type="password" class="form-control custom-input" id="inputPassword" placeholder="Password">
+														</div>
+													</div>
+													<div class="form-group form-remark-box">
+														<div class="col-sm-offset-2 col-sm-10">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox"> Remember me
+																</label>
+															</div>
+														</div>
+														<div class="col-sm-offset-2 col-sm-10 forgotpass">
+															<a href="#">Forgot your password?</a>
+															<a href="#">Why do I need cabinet?</a>
+														</div>
+													</div>
+												</div>
+												<div class="form-group form-buttons-box">
+													<div class="col-sm-offset-2 col-sm-10">
+														<div class="form-buttons">
+															<button type="submit" class="btn btn-primary btn-custom-primary">Login</button>
+															<a type="submit" class="btn btn-default">Sign in</a>
+														</div>
+													</div>
+												</div>
+											</form>
 										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary">Save changes</button>
-										</div>
+										<div class="modal-footer"></div>
 									</div>
 								</div>
 							</div>
@@ -79,12 +111,21 @@
 					<div class="carousel-inner vertical-carousel-inner inherit-height" role="listbox">
 						<div class="item slideritem active">
 							<img src="img/phoneslider.jpg" alt="tech">
+							<span class="productname">IPhone 5S</span>
+							<span class="price">120$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 						<div class="item slideritem">
 							<img src="img/tabletslider.jpg" alt="tech">
+							<span class="productname">Samsung Galaxy Tab 2</span>
+							<span class="price">150$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 						<div class="item slideritem">
 							<img src="img/laptopslider.jpg" alt="tech">
+							<span class="productname">Microsoft Surface Book</span>
+							<span class="price">1150$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 					</div>
 					<a class="left shadow-top" href="#phone-slider" role="button" data-slide="prev">
@@ -100,12 +141,21 @@
 					<div class="carousel-inner vertical-carousel-inner inherit-height" role="listbox">
 						<div class="item slideritem active">
 							<img src="img/tabletslider.jpg" alt="tech">
+							<span class="productname">Samsung Galaxy Tab 2</span>
+							<span class="price">150$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 						<div class="item slideritem">
 							<img src="img/laptopslider.jpg" alt="tech">
+							<span class="productname">Microsoft Surface Book</span>
+							<span class="price">1150$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 						<div class="item slideritem">
 							<img src="img/phoneslider.jpg" alt="tech">
+							<span class="productname">IPhone 5S</span>
+							<span class="price">120$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 					</div>
 					<a class="left shadow-top" href="#tablet-slider" role="button" data-slide="prev">
@@ -121,12 +171,21 @@
 					<div class="carousel-inner vertical-carousel-inner inherit-height" role="listbox">
 						<div class="item slideritem active">
 							<img src="img/laptopslider.jpg" alt="tech">
+							<span class="productname">Microsoft Surface Book</span>
+							<span class="price">1150$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 						<div class="item slideritem">
 							<img src="img/phoneslider.jpg" alt="tech">
+							<span class="productname">IPhone 5S</span>
+							<span class="price">120$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 						<div class="item slideritem">
 							<img src="img/tabletslider.jpg" alt="tech">
+							<span class="productname">Samsung Galaxy Tab 2</span>
+							<span class="price">150$</span>
+							<a href="#" class="more"><i class="fa fa-arrow-circle-right"></i></a>
 						</div>
 					</div>
 					<a class="left shadow-top" href="#laptop-slider" role="button" data-slide="prev">
