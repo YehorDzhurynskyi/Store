@@ -1,0 +1,9 @@
+[Global]
+  -compress bootstrap.js
+  -make search
+
+[index.html]
+  -make login form
+  -make cart
+  -make slider
+  -make catalog categories  

@@ -321,7 +321,6 @@ if (typeof jQuery === 'undefined') {
     this.interval    = null
     this.$active     = null
     this.$items      = null
-    this.timeout     = options.timeout
     this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
     this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
       .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
@@ -352,7 +351,7 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.prototype.cycle = function (e) {
     setTimeout(function(){
-      this.timeout = null
+      this.options.timeout = null
       e || (this.paused = false)
       this.interval && clearInterval(this.interval)
 
@@ -361,7 +360,7 @@ if (typeof jQuery === 'undefined') {
         && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
 
       return this
-    }.bind(this), this.timeout !== null ? this.timeout : 0)
+    }.bind(this), this.options.timeout !== null ? this.options.timeout : 0)
   }
 
   Carousel.prototype.getItemIndex = function (item) {
@@ -479,8 +478,9 @@ if (typeof jQuery === 'undefined') {
       var data    = $this.data('bs.carousel')
       var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
       var action  = typeof option == 'string' ? option : options.slide
-
+      var resetTimeout = typeof option == 'boolean'
       if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+      if (resetTimeout) data.options.timeout = $this.attr('data-timeout')
       if (typeof option == 'number') data.to(option)
       else if (action) data[action]()
       else if (options.interval) data.pause().cycle()
