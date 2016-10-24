@@ -3,9 +3,9 @@
 		width: 60%;
 	}
 	.mobile-nav li {
+		font-size: 14px;
 		height: 45px;
 		line-height: 45px;
-		font-size: 14px;
 	}
 	footer {
 		padding: 0;
@@ -14,9 +14,9 @@
 
 @media screen and (max-width: 991px) {
 	.mobile-nav .icons .icon {
-		padding-right: 0;
-		margin-right: 0;
 		margin-left: 0;
+		margin-right: 0;
+		padding-right: 0;
 	}
 }
 

@@ -8,6 +8,10 @@ ul {
 	padding: 0;
 }
 
+.relative {
+	position: relative;
+}
+
 /*====================HEADER====================*/
 
 #header-top {
@@ -103,21 +107,21 @@ ul {
 }
 
 #mobile-menu-button {
-	padding: 5px 8px;
-	float: right;
-	width: 40px;
-	height: 40px;
+	background: #eee;
 	border: 1px solid #888;
 	border-radius: 5px;
-	background: #eee;
+	float: right;
+	height: 40px;
 	margin-top: 15px;
+	padding: 5px 8px;
+	width: 40px;
 }
 
 #mobile-menu-button .icon-bar {
+	background: #999;
+	display: block;
 	height: 3px;
 	margin-bottom: 4px;
-	display: block;
-	background: #999;
 	width: 100%;
 }
 
@@ -165,41 +169,34 @@ ul {
 }
 
 .mobile-nav {
-	position: absolute;
-	background: #d3d3d3;
-	background: -moz-linear-gradient(top, #d3d3d3 0%, #dddddd 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, #d3d3d3), color-stop(100%, #dddddd));
-	background: -webkit-linear-gradient(top, #d3d3d3 0%, #dddddd 100%);
-	background: -o-linear-gradient(top, #d3d3d3 0%, #dddddd 100%);
-	background: -ms-linear-gradient(top, #d3d3d3 0%, #dddddd 100%);
-	background: linear-gradient(to bottom, #d3d3d3 0%, #dddddd 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d3', endColorstr='#dddddd', GradientType=0 );
-	top: 70px;
-	right: 0;
+	background: #efefef;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
 	padding: 30px 0;
 	padding-top: 15px;
-	z-index: 999;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, .6);
+	position: absolute;
+	right: 0;
+	top: 70px;
 	transition: transform .2s ease;
+	z-index: 999;
 }
 
 .mobile-nav li {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
 	height: 60px;
-	width: 80%;
+	line-height: 60px;
 	margin: 0 auto;
 	text-align: right;
-	line-height: 60px;
-	font-size: 15px;
 	text-transform: uppercase;
-	font-family: 'PT Sans', sans-serif;
+	width: 80%;
 }
 
 .mobile-nav li:first-child {
-	text-transform: none;
-	text-align: center;
+	border-bottom: 1px dotted #555;
 	color: #444;
 	font-size: 20px;
-	border-bottom: 1px dotted #555;
+	text-align: center;
+	text-transform: none;
 }
 
 .mobile-nav li a {
@@ -207,26 +204,25 @@ ul {
 }
 
 .mobile-menu-inactive {
-	width: 0 !important;
 	overflow: hidden;
 	transform: translateX(100%);
+	width: 0 !important;
 }
 
 .icons:after {
+	clear: both;
 	content: '';
 	display: table;
-	clear: both;
 }
 
 .icons .icon {
 	border-right: 1px dotted #888;
 	color: #d5d5d5;
 	display: block;
-	float: left;
-	position: relative;
-	text-align: center;
 	font-size: 35px;
+	float: left;
 	height: 50px;
+	text-align: center;
 	margin-top: 10px;
 	margin-right: 15px;
 	padding-right: 15px;
@@ -248,15 +244,15 @@ ul {
 }
 
 .mobile-nav .icons {
-	width: 80%;
+	border-top: 1px dotted #555;
 	margin: 0 auto;
 	padding-top: 40px;
-	border-top: 1px dotted #555;
+	width: 80%;
 }
 
 .mobile-nav .icons .icon {
-	margin-top: 0;
 	color: #707070;
+	margin-top: 0;
 }
 
 .mobile-nav .icons .icon:hover {
@@ -264,36 +260,37 @@ ul {
 }
 
 .mobile-navbar-search {
-	width: 80%;
-	margin: 0 auto;
 	float: none;
+	margin: 0 auto;
 	margin-top: 20px;
+	width: 80%;
 }
 
 .mobile-navbar-search input {
-	width: 80%;
 	border: 1px solid #909090;
+	width: 80%;
 }
 
 .mobile-navbar-search button {
-	width: 20%;
-	color: #222;
 	background: #909090;
+	color: #222;
+	width: 20%;
 }
 
 .icons .icon .after {
-	bottom: -8px;
+	bottom: -13px;
 	font-size: 13px;
+	font-family: Helvetica, sans-serif;
 	position: absolute;
 	text-transform: lowercase;
 }
 
 .cart .after {
-	left: 9px;
+	left: 7px;
 }
 
 .cabinet .after {
-	left: 4px;
+	left: -7px;
 }
 
 /*====================SLIDER====================*/
@@ -689,6 +686,10 @@ footer {
 .sitemap ul {
 	float: left;
 	margin-right: 60px;
+}
+
+.sitemap li {
+	margin-bottom: 4px;
 }
 
 .sitemap a,
