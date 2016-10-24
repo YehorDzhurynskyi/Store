@@ -125,12 +125,21 @@ ul {
 	margin-bottom: 0;
 }
 
-#search {
-	float: left;
-	font-size: 0;
+#mobile-menu-button:hover {
+	background: #ddd;
 }
 
-#search input {
+#mobile-menu-button:hover .icon-bar {
+	background: #777;
+}
+
+.search {
+	float: right;
+	font-size: 0;
+	margin-right: 35px;
+}
+
+.search input {
 	border: none;
 	border-bottom-left-radius: 15px;
 	border-top-left-radius: 15px;
@@ -141,11 +150,12 @@ ul {
 	width: 200px;
 }
 
-#search input:focus {
+.search input:focus {
 	box-shadow: 0 0 3px #f6efda;
 }
 
-#search button {
+.search button {
+	background: #ddd;
 	border: none;
 	border-bottom-right-radius: 15px;
 	border-top-right-radius: 15px;
@@ -154,52 +164,104 @@ ul {
 	width: 40px;
 }
 
-#top-menu-wrapper .icons {
-	float: left;
+.mobile-nav {
+	position: fixed;
+	background: #777;
+	top: 70px;
+	right: 0;
+	padding: 30px 0;
+	width: 33%;
 }
 
-#top-menu-wrapper .icons .icon {
-	border-right: 1px dotted #888;
+@media screen and (max-width: 767px) {
+	.mobile-nav {
+		width: 60%;
+	}
+}
+
+.mobile-nav li {
+	height: 50px;
+	width: 70%;
+	margin: 0 auto;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.mobile-nav li:first-child {
+	text-align: left;
+}
+
+.mobile-nav li a {
 	color: #eee;
+}
+
+
+.icons:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.icons .icon {
+	border-right: 1px dotted #888;
+	color: #e5e5e5;
 	display: block;
 	float: left;
+	position: relative;
+	text-align: center;
 	font-size: 35px;
 	height: 50px;
 	margin-top: 10px;
 	margin-right: 15px;
 	padding-right: 15px;
-	position: relative;
-	text-align: center;
 	width: 50px;
 }
 
-#top-menu-wrapper .icons .icon:first-of-type {
+.icons .icon:first-of-type {
 	margin-left: 15px;
 }
 
-#top-menu-wrapper .icons .icon:last-of-type {
+.icons .icon:last-of-type {
 	border: none;
 	margin-right: 0;
 	padding-right: 0;
 }
 
-#top-menu-wrapper .icons .icon:hover {
+.icons .icon:hover {
 	color: #fff;
 }
 
-#top-menu-wrapper .icons .icon:after {
+.mobile-nav .icons {
+	margin-top: 20px;
+	padding: 0 10%;
+	padding-top: 20px;
+	border-top: 1px dotted #eee;
+}
+
+.mobile-nav .icons .icon {
+	margin-top: 0;
+}
+
+.mobile-nav .icons-wrapper {
+
+}
+
+.icons .icon:after {
 	bottom: -8px;
 	font-size: 13px;
 	position: absolute;
 	text-transform: lowercase;
 }
 
-#cart:after {
+.cart:after {
 	content: 'cart';
 	left: 9px;
 }
 
-#cabinet:after {
+.cabinet:after {
 	content: 'cabinet';
 	left: 4px;
 }
@@ -281,6 +343,7 @@ ul {
 
 .slideritem .more:hover {
 	background: #720505;
+	color: #ccc;
 }
 
 .vertical-carousel-inner {

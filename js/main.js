@@ -13,3 +13,4 @@ $(document).focus(function(){
 	$('#sliderbar .carousel').carousel('prev').carousel(true);
 });
 
+
