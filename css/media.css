@@ -1,0 +1,28 @@
+@media screen and (max-width: 550px) {
+	.mobile-nav {
+		width: 60%;
+	}
+	.mobile-nav li {
+		height: 45px;
+		line-height: 45px;
+		font-size: 14px;
+	}
+	footer {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.mobile-nav .icons .icon {
+		padding-right: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	#aside-menu nav li {
+		font-family: 'Tahoma', sans-serif;
+		font-size: 8.8px;
+	}
+}
