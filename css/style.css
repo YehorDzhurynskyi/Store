@@ -102,6 +102,29 @@ ul {
 	padding-right: 10px;
 }
 
+#mobile-menu-button {
+	padding: 5px 8px;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #888;
+	border-radius: 5px;
+	background: #eee;
+	margin-top: 15px;
+}
+
+#mobile-menu-button .icon-bar {
+	height: 3px;
+	margin-bottom: 4px;
+	display: block;
+	background: #999;
+	width: 100%;
+}
+
+#mobile-menu-button .icon-bar:last-child {
+	margin-bottom: 0;
+}
+
 #search {
 	float: left;
 	font-size: 0;
@@ -248,10 +271,10 @@ ul {
 	border-radius: 25px;
 	font-family: 'Oxygen', sans-serif;
 	color: #fff;
-	font-size: 40px;
+	font-size: 50px;
 	text-transform: lowercase;
 	text-align: center;
-	line-height: 50px;
+	line-height: 45px;
 	right: 50px;
 	bottom: 90px;
 }
@@ -737,3 +760,4 @@ footer {
 	border-color: #a14206;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(137, 72, 9, .6);
 }
+
