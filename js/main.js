@@ -16,25 +16,19 @@ var responsiveNavbar = function() {
 	});
 }
 
+var responsiveFooter = function() {
+	var footerHeight = $('footer').height();
+	$('#main').css('padding-bottom', footerHeight);
+}
+
 $(window).ready(function(){
-	$('#sliderbar .carousel').carousel({
-		pause: null,
-		timeout: $(this).attr('data-timeout')
-	});
-
 	responsiveNavbar();
-});
-
-$(document).blur(function(){
-	$('#sliderbar .carousel').carousel('pause');
-});
-
-$(document).focus(function(){
-	$('#sliderbar .carousel').carousel('prev').carousel(true);
+	responsiveFooter();
 });
 
 $(window).resize(function() {
 	responsiveNavbar();
+	responsiveFooter();
 });
 
 $('#mobile-menu-button').click(function() {

@@ -21,6 +21,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT Sans|Quicksand|Oxygen|Exo|Tahoma" rel="stylesheet"> 
 	</head>
 	<body>
+	<div id="main-wrapper">
 		<header>
 			<section id="header-top" class="hidden-xs hidden-sm">
 				<section class="social col-md-6">
@@ -140,7 +141,43 @@
 				</div>
 			</section>
 		</header>
-		
+		<div id="main">
+			<div class="container-fluid">
+				<div class="col-md-2 hidden-xs hidden-sm">
+					<div class="row">
+						<aside>
+							<nav>
+								<ol>
+									<li>Catalog</li>
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">Tablets</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Headsets</a></li>
+									<li><a href="#">Mice</a></li>
+									<li><a href="#">Keyboards</a></li>
+									<li><a href="#">Monitors</a></li>
+									<li id="nested-menu">
+										<a class="dropdown" role="button" data-menu-id="support-menu">Support<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+										<ul id="support-menu">
+											<li><a href="#">Payment</a></li>
+											<li><a href="#">Delivery</a></li>
+											<li><a href="#">Contacts</a></li>
+											<li><a href="#">Help</a></li>
+											<li><a href="#">FAQ</a></li>
+										</ul>
+									</li>
+								</ol>
+							</nav>
+						</aside>
+					</div>
+				</div>
+				<div class="col-md-10 col-xs-12">
+					<div class="row">
+						
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
@@ -217,5 +254,7 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/item.js"></script>
+	</div>
 	</body>
 </html>
