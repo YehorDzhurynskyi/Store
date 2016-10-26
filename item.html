@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/item.css">
 		<link rel="stylesheet" href="css/media.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT Sans|Quicksand|Oxygen|Exo|Tahoma" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT Sans|Quicksand|Oxygen|Exo|Proza+Libre" rel="stylesheet"> 
 	</head>
 	<body>
 	<div id="main-wrapper">
@@ -39,7 +39,7 @@
 			</section>
 			<section id="header-bottom">
 				<div id="logo" class="col-xs-4">
-					<h1><a href="https://www.google.com">TechStore</a></h1>
+					<h1><a href="/">TechStore</a></h1>
 				</div>
 				<div class="col-xs-8 hidden-md hidden-lg">
 					<button id="mobile-menu-button" data-mobile-menu-id="#mobile-navigation-menu">
@@ -143,37 +143,109 @@
 		</header>
 		<div id="main">
 			<div class="container-fluid">
-				<div class="col-md-2 hidden-xs hidden-sm">
+				<div class="col-md-3 hidden-xs hidden-sm">
+					<section id="catalog">
+						<nav>
+							<ol id="catalog-menu">
+								<li>Catalog</li>
+								<li><a href="#" data-menu-target="#menu-phones">Phones <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" data-menu-target="#menu-tablets">Tablets <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" data-menu-target="#menu-laptops">Laptops <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" data-menu-target="#menu-headsets">Headsets <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" data-menu-target="#menu-mice">Mice <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" data-menu-target="#menu-keyboards">Keyboards <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" data-menu-target="#menu-monitors">Monitors <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							</ol>
+							<section id="secondary-menus">
+								<div id="menu-phones">
+									<ul>
+										<li>phones</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+
+								<div id="menu-tablets">
+									<ul>
+										<li>tablets</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+
+								<div id="menu-laptops">
+									<ul>
+										<li>laptops</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+
+								<div id="menu-headsets">
+									<ul>
+										<li>headsets</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+
+								<div id="menu-mice">
+									<ul>
+										<li>mice</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+
+								<div id="menu-keyboards">
+									<ul>
+										<li>keyboards</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+
+								<div id="menu-monitors">
+									<ul>
+										<li>monitors</li>
+										<li><a href="#" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+									</ul>
+									<div class="filter">
+										
+									</div>
+								</div>
+							</section>
+						</nav>
+					</section>
+				</div>
+				<div class="col-md-9 col-xs-12">
 					<div class="row">
-						<aside>
+						<aside id="aside-menu">
 							<nav>
-								<ol>
-									<li>Catalog</li>
-									<li><a href="#">Phones</a></li>
-									<li><a href="#">Tablets</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Headsets</a></li>
-									<li><a href="#">Mice</a></li>
-									<li><a href="#">Keyboards</a></li>
-									<li><a href="#">Monitors</a></li>
-									<li id="nested-menu">
-										<a class="dropdown" role="button" data-menu-id="support-menu">Support<span class="glyphicon glyphicon-triangle-bottom"></span></a>
-										<ul id="support-menu">
-											<li><a href="#">Payment</a></li>
-											<li><a href="#">Delivery</a></li>
-											<li><a href="#">Contacts</a></li>
-											<li><a href="#">Help</a></li>
-											<li><a href="#">FAQ</a></li>
-										</ul>
-									</li>
-								</ol>
+								<ul>
+									<li><a href="#">Payment</a></li>
+									<li><a href="#">Delivery</a></li>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">FAQ</a></li>
+								</ul>
 							</nav>
 						</aside>
-					</div>
-				</div>
-				<div class="col-md-10 col-xs-12">
-					<div class="row">
-						
+						<div id="order">
+							
+						</div>
 					</div>
 				</div>
 			</div>
