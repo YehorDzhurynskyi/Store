@@ -23,3 +23,14 @@ $('#catalog li > a').click(function(e) {
 		});
 	}
 });
+
+$(window).ready(function() {
+	var arrHeight = [];
+	$('#secondary-menus [id|="menu"]').each(function() {
+		arrHeight.push(this.offsetHeight);
+	});
+
+	var maxHeight = Math.max(...arrHeight);
+	$('#catalog').css('height', maxHeight);
+
+});
