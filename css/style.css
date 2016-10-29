@@ -517,3 +517,44 @@ footer {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(137, 72, 9, .6);
 }
 
+/*====================ASIDE MENU====================*/
+
+#aside-menu {
+	background: #e0d5b7;
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, .3);
+	height: 50px;
+	margin-top: 20px;
+}
+
+#aside-menu nav ul {
+	float: left;
+	font-size: 0;
+	margin-left: 10px;
+}
+
+#aside-menu nav li {
+	display: inline-block;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	line-height: 50px;
+	padding: 0 12px;
+	text-transform: uppercase;
+}
+
+#aside-menu nav li a,
+#aside-menu nav li a:hover,
+#aside-menu nav li a:focus,
+#aside-menu nav li a:active,
+#aside-menu nav li a:visited,
+#aside-menu nav li a:link {
+	color: #707070;
+	text-decoration: none;
+}
+
+#aside-menu nav li a {
+	transition: color .2s ease;
+}
+
+#aside-menu nav li a:hover {
+	color: #000;
+}
