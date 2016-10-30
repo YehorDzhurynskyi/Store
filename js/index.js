@@ -6,9 +6,9 @@ $(window).ready(function(){
 });
 
 $(document).blur(function(){
-	$('#sliderbar .carousel').carousel('pause');
+	$('#sliderbar .carousel').carousel('prev').carousel('pause');
 });
 
 $(document).focus(function(){
-	$('#sliderbar .carousel').carousel('prev').carousel(true);
+	$('#sliderbar .carousel').carousel(true);
 });
