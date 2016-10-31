@@ -23,3 +23,15 @@ $('#catalog li > .menu-link').click(function(e) {
 		});
 	}
 });
+
+$('#image-modal').on('show.bs.modal', function (event) {
+	var button = $(event.relatedTarget);
+	var source = button.data('source');
+	var modal = $(this);
+	modal.find('.modal-image').append('<img src="' + source + '" alt="img" style="max-width: 100%; height-auto">');
+});
+
+$('#image-modal').on('hidden.bs.modal', function() {
+	var modal = $(this);
+	modal.find('.modal-image img').remove();
+});
