@@ -95,7 +95,7 @@
 }
 
 #secondary-menus .filter-box {
-	width: 99%;
+	width: 98%;
 	margin: 5px auto;
 	background: #fff6e4;
 	padding: 15px 0;
@@ -124,21 +124,59 @@
 	width: 100%;
 }
 
-#secondary-menus .filter-body a {
+#secondary-menus .filter-item-a,
+#secondary-menus .filter-item-active-a {
 	display: block;
-	color: #606060;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
 	width: 100%;
 }
+
+#secondary-menus .filter-item-a {
+	color: #606060;
+}
+
+#secondary-menus .filter-item-active-a {
+	color: #333;
+}
+
+#secondary-menus .filter-item-a:hover {
+	color: #333;
+	background: #f8eecb;
+}
+
+#secondary-menus .filter-item-active-a:hover {
+	color: #808080;
+	background: #f8eecb;
+}
+
 
 #secondary-menus .filter-item {
 	display: block;
 	position: relative;
-	color: #606060;
 	width: 100%;
+	padding-left: 25px;
 }
 
-#secondary-menus .filter-item:before {
-	
+#secondary-menus .filter-item-a:before,
+#secondary-menus .filter-item-active-a:before {
+	content: '';
+	background: #eee;
+	border: 1px solid #444;
+	width: 20px;
+	height: 20px;
+	display: block;
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .3);
+	border-radius: 3px;
+	top: 5px;
+	position: absolute;
+}
+
+#secondary-menus .filter-item-active-a:before {
+	background: url(../img/check.png) no-repeat center, #eee;
+	background-size: 16px 16px;
 }
 
 /*====================ASIDE====================*/
