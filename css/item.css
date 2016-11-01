@@ -87,9 +87,18 @@
 	text-transform: uppercase;
 	font-family: 'Proza Libre', sans-serif;
 	background: #d8c9a1;
+	background: -moz-linear-gradient(top, #d8c9a1 0%, #dbcdab 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #d8c9a1), color-stop(100%, #dbcdab));
+	background: -webkit-linear-gradient(top, #d8c9a1 0%, #dbcdab 100%);
+	background: -o-linear-gradient(top, #d8c9a1 0%, #dbcdab 100%);
+	background: -ms-linear-gradient(top, #d8c9a1 0%, #dbcdab 100%);
+	background: linear-gradient(to bottom, #d8c9a1 0%, #dbcdab 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8c9a1', endColorstr='#dbcdab', GradientType=0 );
 	width: 100%;
 	height: 50px;
+	border-radius: 5px;
 	line-height: 55px;
+	color: #4a4a4a;
 	font-size: 18px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
 }
@@ -152,7 +161,6 @@
 	background: #f8eecb;
 }
 
-
 #secondary-menus .filter-item {
 	display: block;
 	position: relative;
@@ -175,7 +183,7 @@
 }
 
 #secondary-menus .filter-item-active-a:before {
-	background: url(../img/check.png) no-repeat center, #eee;
+	background: url(../img/check.png) no-repeat center, #fff;
 	background-size: 16px 16px;
 }
 
@@ -306,7 +314,6 @@
 .order-rating-before {
 	display: block;
 	height: inherit;
-	width: 85%;
 	background: url(../img/rating-stars.png) no-repeat;
 	background-size: 10.1vmax 14.35vmax;
 	background-position: left -11.95vmax;
@@ -358,10 +365,10 @@
 	margin-top: 50px;
 	padding: 0;
 	padding-bottom: 10px;
-	border-bottom: 1px dotted #999;
 }
 
-.order-images > h3 {
+.order-images > h3,
+.order-reviews > h3 {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
@@ -380,6 +387,8 @@
 .order-images .image-box {
 	width: 90px;
 	line-height: 90px;
+	margin-right: 1px;
+	margin-left: 1px;
 	border: 1px dashed #dadada;
 }
 
@@ -400,8 +409,109 @@
 	vertical-align: middle;
 }
 
-.order-response {
-	height: 500px;
+.order-review {
+	width: 95%;
+	border: 1px solid #999;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+	margin: 25px auto;
+}
+
+.review-header {
+	background: #eaeaea;
+	margin: 0 auto;
+	font-size: 1.5vmax;
+	padding: 3px 0;
+	border-bottom: 1px dotted #999;
+}
+
+.review-name {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: .8em;
+	color: #444;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.review-time {
+	font-size: .7em;
+	padding-left: .7em;
+	color: #707070;
+}
+
+.review-rating {
+	float: right;
+	width: 4.1em;
+	margin: 0 auto;
+	margin-right: 10px;
+	height: 1.5vmax;
+	margin-top: .25em;
+	background: url(../img/rating-stars.png) no-repeat;
+	background-size: 6.1vmax 8.8vmax;
+}
+
+.review-rating-before {
+	display: block;
+	height: inherit;
+	background: url(../img/rating-stars.png) no-repeat;
+	background-size: 6.1vmax 9vmax;
+	background-position: left -7.5vmax;
+}
+
+.review-body {
+	font-size: 1.5vmax;
+	margin: 0 auto;
+	background: #f7f7f7;
+}
+
+.review-text {
+	padding: 10px;
+	color: #5a5a5a;
+	font-size: .85em;
+}
+
+.review-footer {
+	background: #f5f5f5;
+	margin: 0 auto;
+	font-size: 1.5vmax;
+	padding: 2px 0;
+	border-top: 1px dotted #999;
+}
+
+.review-reply {
+	margin-left: 10px;
+	font-family: 'Proza Libre', sans-serif;
+	padding: 3px 5px;
+	font-size: .8em;
+	color: #965915;
+	cursor: pointer;
+	text-decoration: underline dotted;
+}
+
+.review-like-bar {
+	font-size: .9em;
+	float: right;
+	margin-top: .35vmin;
+}
+
+.review-like {
+	color: #799879;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.review-dislike {
+	color: #b37b7b;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.review-dislike:hover {
+	color: red;
+}
+
+.review-like:hover {
+	color: green;
 }
 
 /*====================MEDIA====================*/
@@ -412,7 +522,8 @@
 	}
 
 	.order-description > h3,
-	.order-images > h3 {
+	.order-images > h3,
+	.order-reviews > h3 {
 		font-size: 24px;
 	}
 }
