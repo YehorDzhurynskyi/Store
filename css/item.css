@@ -417,6 +417,8 @@
 	margin: 25px auto;
 }
 
+/*====================REVIEW====================*/
+
 .review-header {
 	background: #eaeaea;
 	margin: 0 auto;
@@ -512,6 +514,133 @@
 
 .review-like:hover {
 	color: green;
+}
+
+/*====================ORDERLIST====================*/
+
+#order-list {
+	background: #f5f5f5;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+}
+
+#order-list h2 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.order-list-dropdown {
+	border: none;
+}
+
+.order-list-header {
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #999;
+}
+
+.order-list-header:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.order-list-body {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+	flex-wrap: wrap;
+}
+
+.order-list-item {
+	width: 210px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	padding: 5px;
+	margin-bottom: 50px;
+	background: #fff;
+}
+
+.order-list-item-image {
+	height: 200px;
+	width: 200px;
+	line-height: 200px;
+}
+
+.order-list-item-image img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+.order-list-item-name {
+	line-height: 20px;
+	border-radius: 5px;
+	font-family: 'Open sans', sans-serif;
+	color: #4284b6;
+	width: 100%;
+	text-align: center;
+}
+
+.order-list-rating {
+	width: 78px;
+	margin: 0 auto;
+	height: 19px;
+	background: url(../img/rating-stars.png) no-repeat;
+	background-size: 78px 114px;
+}
+
+.order-list-rating:after {
+	content: '2 reviews';
+	font-size: 12px;
+	color: #707070;
+	margin-left: 12px;
+}
+
+.order-list-rating-before {
+	display: block;
+	height: inherit;
+	background: url(../img/rating-stars.png) no-repeat;
+	background-size: 78px 112px;
+	background-position: left -92px;
+}
+
+.order-list-item-footer {
+	padding-top: 20px;
+}
+
+.order-list-item-footer .price {
+	float: left;
+	height: 40px;
+	font-family: 'Exo', sans-serif;
+	color: #555;
+	font-size: 30px;
+	text-align: center;
+}
+
+.order-list-item-footer .more {
+	display: block;
+	float: right;
+	height: 40px;
+	width: 40px;
+	background: #a22323;
+	border-radius: 25px;
+	font-family: 'Oxygen', sans-serif;
+	color: #fff;
+	font-size: 40px;
+	text-transform: lowercase;
+	text-align: center;
+	line-height: 35px;
+}
+
+.order-list-item-footer:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.order-list-item-footer .more:hover {
+	background: #720505;
+	color: #eee;
 }
 
 /*====================MEDIA====================*/
