@@ -15,6 +15,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/item.css">
 		<link rel="stylesheet" href="css/cabinet.css">
 		<link rel="stylesheet" href="css/media.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -142,7 +143,149 @@
 			</section>
 		</header>
 		<div id="main">
-		</div><!-- MAIN -->
+			<div class="container-fluid">
+				<div class="col-md-3 hidden-xs hidden-sm">
+					<section id="catalog">
+						<nav>
+							<ol id="catalog-menu">
+								<li>Catalog</li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-phones">Phones <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-tablets">Tablets <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-laptops">Laptops <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-headsets">Headsets <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-mice">Mice <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-keyboards">Keyboards <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+								<li><a href="#" class="menu-link" role="button" data-menu-target="#menu-monitors">Monitors <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+							</ol>
+							<section id="secondary-menus">
+								<form>
+									<div id="menu-phones">
+										<ul>
+											<li>phones</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter-box">
+											<div class="filter">
+												<div class="filter-header"><span>Manufacturer</span></div>
+												<div class="filter-body">
+													<ul>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">Apple</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-active-a"><span class="filter-item">Microsoft</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">Samsung</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">Lenovo</span></a></label></li>
+													</ul>
+												</div>
+											</div>
+											<div class="filter">
+												<div class="filter-header"><span>Class</span></div>
+												<div class="filter-body">
+													<ul>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">For buisness</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">For studying</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">Transformers</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">Lightweight</span></a></label></li>
+													</ul>
+												</div>
+											</div>
+											<div class="filter">
+												<div class="filter-header"><span>Price</span></div>
+												<div class="filter-body">
+													<ul>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">under 150$</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">150$ - 250$</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">250$ - 350$</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">above 350$</span></a></label></li>
+													</ul>
+												</div>
+											</div>
+											<div class="filter">
+												<div class="filter-header"><span>Screen size</span></div>
+												<div class="filter-body">
+													<ul>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">under 4.6cm</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">4.6cm - 5.4cm</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">5.4cm - 7.6cm</span></a></label></li>
+														<li><label><input type="checkbox" class="hidden"><a href="#" class="filter-item-a"><span class="filter-item">above 7.6cm</span></a></label></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="menu-tablets">
+										<ul>
+											<li>tablets</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter"></div>
+									</div>
+									<div id="menu-laptops">
+										<ul>
+											<li>laptops</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter"></div>
+									</div>
+									<div id="menu-headsets">
+										<ul>
+											<li>headsets</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter"></div>
+									</div>
+									<div id="menu-mice">
+										<ul>
+											<li>mice</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter"></div>
+									</div>
+									<div id="menu-keyboards">
+										<ul>
+											<li>keyboards</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter"></div>
+									</div>
+									<div id="menu-monitors">
+										<ul>
+											<li>monitors</li>
+											<li><a href="#" class="menu-link" role="button" data-menu-target="#catalog-menu"><span class="glyphicon glyphicon-chevron-left"></span> Catalog</a></li>
+										</ul>
+										<div class="filter"></div>
+									</div>
+								</form>
+							</section>
+						</nav>
+					</section>
+				</div>
+				<div class="col-md-9 col-xs-12">
+					<div class="row">
+						<aside id="aside-menu">
+							<nav>
+								<ul>
+									<li><a href="#">Payment</a></li>
+									<li><a href="#">Delivery</a></li>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">FAQ</a></li>
+								</ul>
+							</nav>
+						</aside>
+						<div id="cabinet">
+							<h2>Cabinet</h2>
+							<div class="col-xs-7 col-xs-offset-1">
+								<dl class="dl-horizontal">
+									<dt>Username</dt>
+									<dd>Yehor</dd>
+									<dt>E-mail</dt>
+									<dd>y.a.dzhurynskyi@gmail.com</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer>
 			<div class="container-fluid">
 				<div class="row">
@@ -218,6 +361,7 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/item.js"></script>
 	</div>
 	</body>
 </html>

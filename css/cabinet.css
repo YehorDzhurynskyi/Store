@@ -1,0 +1,31 @@
+#cabinet {
+	background: #f8f8f8;
+	height: 600px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+#cabinet > h2 {
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: 1px dotted #888;
+}
+
+#cabinet dl {
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+}
+
+#cabinet dt {
+	width: 100px;
+	margin-top: 30px;
+	font-weight: bold;
+	color: #707070;
+}
+
+#cabinet dd {
+	padding-top: 30px;
+	margin-left: 140px;
+}
+
